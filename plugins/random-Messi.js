@@ -5,5 +5,5 @@ let url = await res[Math.floor(res.length * Math.random())]
 conn.sendButton(m.chat, "*Messi*", author, url, [['⚽ SIGUIENTE ⚽', `${usedPrefix + command}`]], m)}
 handler.help = ['messi']
 handler.tags = ['internet']
-handler.command = /^(messi)$/i
+handler.command = /^(ميسي)$/i
 export default handler

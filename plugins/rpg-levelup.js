@@ -7,19 +7,19 @@ let handler = async (m, { conn }) => {
     if (!canLevelUp(user.level, user.exp, global.multiplier)) {
         let { min, xp, max } = xpRange(user.level, global.multiplier)
         throw `
-┌───⊷ *NIVEL*
-▢ Nombre : *${name}*
-▢ Nivel : *${user.level}*
-▢ XP : *${user.exp - min}/${xp}*
+┌───⊷ *المستوى*
+▢ رقم : *${name}*
+▢ المستوى : *${user.level}*
+▢ اكس بي : *${user.exp - min}/${xp}*
 └──────────────
 
-Te falta *${max - user.exp}* de *XP* para subir de nivel
+تفتقر *${max - user.exp} من *اكس بي* إلى أعلى
 `.trim()
     }
     let before = user.level * 1
     while (canLevelUp(user.level, user.exp, global.multiplier)) user.level++
     if (before !== user.level) {
-        let teks = `🎊 Bien hecho ${conn.getName(m.sender)}    Nivel:`
+        let teks = `🎊 أحسنت${conn.getName(m.sender)}    Nivel:`
         let str = `
 ┌─⊷ *LEVEL UP*
 ▢ Nivel anterior : *${before}*

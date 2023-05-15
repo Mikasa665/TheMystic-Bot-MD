@@ -12,8 +12,8 @@ let haha = result.image[0]
 await conn.reply(m.chat, global.wait, m)
 conn.sendButton(m.chat, `_${command}_`.trim(), `*◈•@${who.split("@s.whatsapp.net")[0]}*`, haha, [['🔄 𝚂𝙸𝙶𝚄𝙸𝙴𝙽𝚃𝙴 🔄', `/${command}`]], fgif, { mentions: [who] })}
 
-if (command == 'pubg') {
-let pug = ['pubg', 'playerunknowns battlegrounds', 'pubg mobile']  
+if (command == 'ببجي') {
+let pug = ['ببجي', 'playerunknowns battlegrounds', 'pubg mobile']  
 let pug2 = pug[Math.floor(Math.random() * pug.length)] 
 let anu = await wallpaper(pug2)
 let result = anu[Math.floor(Math.random() * anu.length)]  
@@ -42,7 +42,7 @@ let res = (await axios.get(`https://raw.githubusercontent.com/BrunoSobrino/TheMy
 let res2 = await res[Math.floor(res.length * Math.random())]
 conn.sendButton(m.chat, `_${command}_`.trim(), `*◈•@${who.split("@s.whatsapp.net")[0]}*`, res2, [['🔄 𝚂𝙸𝙶𝚄𝙸𝙴𝙽𝚃𝙴 🔄', `/${command}`]], fgif, { mentions: [who] })}
 
-if (command == 'coffee') {
+if (command == 'قهوة') {
 let haha = await conn.getFile(`https://coffee.alexflipnote.dev/random`)
 await conn.reply(m.chat, global.wait, m)
 conn.sendButton(m.chat, `_${command}_`.trim(), `*◈•@${who.split("@s.whatsapp.net")[0]}*`, haha.data, [['🔄 𝚂𝙸𝙶𝚄𝙸𝙴𝙽𝚃𝙴 🔄', `/${command}`]], fgif, { mentions: [who] })}
@@ -66,7 +66,7 @@ let anu = await wallpaper('cyberspace')
 let result = anu[Math.floor(Math.random() * anu.length)]  
 let haha = result.image[0]    
 await conn.reply(m.chat, global.wait, m)
-conn.sendButton(m.chat, `_${command}_`.trim(), `*◈•@${who.split("@s.whatsapp.net")[0]}*`, haha, [['🔄 𝚂𝙸𝙶𝚄𝙸𝙴𝙽𝚃𝙴 🔄', `/${command}`]], fgif, { mentions: [who] })}
+conn.sendButton(m.chat, `_${command}_`.trim(), `*◈•@${who.split("@s.whatsapp.net")[0]}*`, haha, [['🔄 صوره اخرى 🔄', `/${command}`]], fgif, { mentions: [who] })}
 
 if (command == 'technology') {
 let anu = await wallpaper('technology')
@@ -80,14 +80,14 @@ let anu = await wallpaper('doraemon')
 let result = anu[Math.floor(Math.random() * anu.length)]  
 let haha = result.image[0]        
 await conn.reply(m.chat, global.wait, m)
-conn.sendButton(m.chat, `_${command}_`.trim(), `*◈•@${who.split("@s.whatsapp.net")[0]}*`, haha, [['🔄 𝚂𝙸𝙶𝚄𝙸𝙴𝙽𝚃𝙴 🔄', `/${command}`]], fgif, { mentions: [who] })}
+conn.sendButton(m.chat, `_${command}_`.trim(), `*◈•@${who.split("@s.whatsapp.net")[0]}*`, haha, [['🔄 صوره اخرى 🔄', `/${command}`]], fgif, { mentions: [who] })}
 
-if (command == 'hacker') {
-let anu = await wallpaper('hacker')
+if (command == 'هكر') {
+let anu = await wallpaper('هكر')
 let result = anu[Math.floor(Math.random() * anu.length)]  
 let haha = result.image[0]   
 await conn.reply(m.chat, global.wait, m)
-conn.sendButton(m.chat, `_${command}_`.trim(), `*◈•@${who.split("@s.whatsapp.net")[0]}*`, haha, [['🔄 𝚂𝙸𝙶𝚄𝙸𝙴𝙽𝚃𝙴 🔄', `/${command}`]], fgif, { mentions: [who] })}
+conn.sendButton(m.chat, `_${command}_`.trim(), `*◈•@${who.split("@s.whatsapp.net")[0]}*`, haha, [['🔄 صوره اخرى 🔄', `/${command}`]], fgif, { mentions: [who] })}
 
 if (command == 'planeta') { 
 let anu = await wallpaper('planet')
@@ -122,7 +122,7 @@ await conn.reply(m.chat, global.wait, m)
 conn.sendButton(m.chat, `_${command}_`.trim(), `*◈•@${who.split("@s.whatsapp.net")[0]}*`, haha.data, [['🔄 𝚂𝙸𝙶𝚄𝙸𝙴𝙽𝚃𝙴 🔄', `/${command}`]], fgif, { mentions: [who] })}
 
 }
-handler.command = ['wpmontaña', 'pubg', 'wpgaming', 'wpaesthetic', 'wprandom', 'coffee', 'pentol', 'caricatura', 'ciberespacio', 'technology', 'doraemon', 'hacker', 'planeta', 'randomprofile', 'wpaesthetic2', 'wpvehiculo', 'wallhp', 'wpmoto']
+handler.command = ['wpmontaña', 'ببجي', 'wpgaming', 'wpaesthetic', 'wprandom', 'قهوة', 'pentol', 'caricatura', 'ciberespacio', 'technology', 'doraemon', 'هكر', 'planeta', 'randomprofile', 'wpaesthetic2', 'wpvehiculo', 'wallhp', 'wpmoto']
 export default handler
 
 async function wallpaper(title, page = '1') {

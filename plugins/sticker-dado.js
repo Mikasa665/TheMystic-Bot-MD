@@ -1,6 +1,6 @@
 let handler = async (m, { conn }) => {
 conn.sendFile(m.chat, `https://api.lolhuman.xyz/api/sticker/dadu?apikey=${lolkeysapi}`, 'error.webp', '', m, { asSticker: true })}
-handler.command = ['dado', 'dados', 'dadu'] 
+handler.command = ['نرد', 'dados', 'نرد'] 
 export default handler
 
 /*import { sticker } from '../lib/sticker.js'
