@@ -3,7 +3,7 @@ import fetch from 'node-fetch'
 import cheerio from 'cheerio'
 
 let handler = async (m, { conn, args, usedPrefix, command }) => {
-   if (!args[0]) throw `*[❗𝐈𝐍𝐅𝐎❗] 𝙸𝙽𝙶𝚁𝙴𝚂𝙴 𝚄𝙽 𝙴𝙽𝙻𝙰𝙲𝙴 𝚅𝙰𝙻𝙸𝙳𝙾 𝙳𝙴 𝙼𝙴𝙳𝙸𝙰𝙵𝙸𝚁𝙴, 𝙴𝙹𝙴𝙼𝙿𝙻𝙾: ${usedPrefix + command} https://www.mediafire.com/file/r0lrc9ir5j3e2fs/DOOM_v13_UNCLONE*`
+   if (!args[0]) throw `*اكتب الامر من ثما الرابط مثال: ${usedPrefix + command} https://www.mediafire.com/file/r0lrc9ir5j3e2fs/DOOM_v13_UNCLONE*`
    try {  
       let res = await mediafireDl(args[0])
       let { name, size, date, mime, link } = res
@@ -23,7 +23,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
 
 handler.help = ['mediafire'].map(v => v + ' <url>')
 handler.tags = ['downloader']
-handler.command = /^(mediafire|mediafiredl|dlmediafire)$/i
+handler.command = /^(ميديا|mediafiredl|dlmediafire)$/i
 
 export default handler
 

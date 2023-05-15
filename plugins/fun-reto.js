@@ -1,9 +1,9 @@
 let handler  = async (m, { conn }) => {
-conn.reply(m.chat,`*┌────「 𝚁𝙴𝚃𝙾 」─*\n*“${pickRandom(global.bucin)}”*\n*└────「 𝙼𝚈𝚂𝚃𝙸𝙲 」─*`, m)
+conn.reply(m.chat,`*┌────「 نصائح 」 ─*\n*“${pickRandom(global.bucin)}”*\n*└────「  دارك بوت 」 ─*`, m)
 }
 handler.help = ['reto']
 handler.tags = ['fun']
-handler.command = /^reto/i
+handler.command = /^نصائح/i
 export default handler
 
 function pickRandom(list) {
@@ -11,23 +11,23 @@ function pickRandom(list) {
 }
 
 global.bucin = [
-"Pasa el pack de una hormiga",
-"Dile a tus amigos que te vas a vivir a EU y mándame una captura de lo que te haya dicho",
-"Grita desde la ventana que quieres mamar y mándame el vídeo",
-"Escribe el nombre de tu crush",
-"Debes de poner el nombre de mi creador en tu estado de WhatsApp, sin dar contexto",
-"Envíame una fotografía tuya",
-"Debes de dibujar en alguna parte de tu cuerpo el nombre de algún integrante del grupo, luego realiza una foto y envíala",
-"Hazte una foto dándole un beso a una Televisión",
- "Mándame una fotografía en ropa interior",
-"Escribe en tu estado de WhatsApp que te gusta comer tierra",
-"Debes de poner la fotografía de un participante del grupo que sea del sexo opuesto al tuyo en tu perfil de WhatsApp durante 3 días 📸📸",
-"Tienes que mandar un audio cantando la canción: Un pato que va cantando alegremente cua cua 🦆",
-"Envía un mensaje a tu ex y dile todavía me gustas", "Envía un audio diciendo amo a The Shadow Brokers - Bot", 
-"Dile a tu crush que la amas y pasa captura al grupo", "Envía un audio cantando", 
-"Envía una foto en la que salgas tu sin taparte la cara ni nada", "Envía un video bailando", 
-"Invita a personas que no conoces a tomarse una selfi contigo y luego envíalo al grupo", 
-"Elija algunos números aleatorios de sus contactos y envíeles un mensaje de texto con el mensaje 'Estoy embarazad@'.", 
+"استمتع بمذاق الحياة في كل لحظة",
+"ركز ذهنك على الأشياء الجيدة الكاملة مقارنة بالأشياء الناقصة، واصنع لحظات لا تنسى مع الذين تحبهم",
+"لا تضيع طاقتك في الرد على الانتقادات",
+"اركض خلف احلامك",
+"لا تتحجج بنقص الوقت؛ فيومك هو نفس يوم العلماء الذين حققوا إنجازات عظيمة. تكون الحياة سعيدة عندما تبدأ بالحب وتنتهي بالطموح",
+"إنّ التحرر من خرافة عدم وجود الوقت الكافي هي أولى المحطات التي ننطلق منها إلى حياة منظمة واستغلال أمثل للوقت والحياة بشكل عام",
+"الحياة كالمرآة، تحصل على أفضل النتائج حين تبتسم لها",
+"إنّ الكمال في كل شيء مستحيل، فمن طبيعة الحياة أن تكون ناقصة لكي تسعى في سبيل سد هذا النقص فلا تقف",
+ "عندما تقول أحبك فلا بد أن تعنيها، وعندما تقول أنا آسف انظر لعيني الشخص الذي تكلمه",
+"أعطِ الناس أكثر مما يتوقعون",
+"لا تسمح لليأس أن يتسلل إليك واصبر، فالله يجبر الصابرين",
+"3 لا تسمح بضياعها قلبك وكرامتك وعائلتك.",
+"لا تسمح لعاطفتك أن تحيد عن ما تركته منطقيًا", 
+"كن لطيفًا مع الجميع، إن الوداع قريب قد يأتي في أي لحظة", 
+"إقرأ القرآن على قدر ما تتمنى من السعادة", "لا تسمع عني، بل اسمع مني أولًا", 
+"إذا لم تقدم الإهتمام والوقت، لن تجد الحب في قلب من تحب", 
+"عندما يختفي الاحترام في أي علاقة حب أو صداقة عليك بالرحيل'.", 
 "¡Tome cualquier bebida que esté cerca de usted, luego mézclela con chile y beba!", 
 "Tome un número aleatorio de sus contactos, llámelo y dígale 'te amo' ", 
 "Compre la comida más barata en la cafetería (o compre una botella de agua) y diga entre sollozos a sus compañeros de clase: 'Esta ... es la comida más cara que he comprado)' ", 

@@ -8,7 +8,7 @@ let url = 'https://google.com/search?q=' + encodeURIComponent(text)
 let search = await googleIt(text)
 let msg = search.articles.map(({ title, url, description }) => { return `*${title}*\n_${url}_\n_${description}_` }).join('\n\n')
 try {
-let ss = `https://image.thum.io/get/fullpage/${url}`
+let ss = await (await fetch(`https://image.thum.io/get/fullpage/${url}`)).buffer()
 await conn.sendFile(m.chat, ss, 'error.png', url + '\n\n' + msg, m)
 } catch {
 m.reply(msg)

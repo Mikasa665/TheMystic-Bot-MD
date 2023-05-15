@@ -39,7 +39,7 @@ let handler = async (m, { conn, args, isPrems, isOwner }) => {
     m.reply(e.toString());
   }
 };
-handler.help = ["ytd"];
+handler.help = ["يوتيوب"];
 handler.tags = ["downloader"];
 handler.command = ["videodoc", "documentvid", "videodocumento"];
 handler.exp = 3;

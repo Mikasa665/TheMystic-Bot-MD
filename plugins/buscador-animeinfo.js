@@ -9,12 +9,12 @@ let result = anime.data[0];
 let resultes = await translate(`${result.background}`, { to: 'es', autoCorrect: true })   
 let resultes2 = await translate(`${result.synopsis}`, { to: 'es', autoCorrect: true })   
 let AnimeInfo = `
-🎀 • *Título:* ${result.title}
-🎋 • *Formato:* ${result.type}
-📈 • *Estado:* ${result.status.toUpperCase().replace(/\_/g, " ")}
-🍥 • *Episodios totales:* ${result.episodes}
-🎈 • *Duración: ${result.duration}*
-✨ • *Basado en:* ${result.source.toUpperCase()}
+🎀 • *الاسم:* ${result.title}
+🎋 • *شكل:* ${result.type}
+📈 • *ولاية:* ${result.status.toUpperCase().replace(/\_/g, " ")}
+🍥 • *مجموع الحلقات:* ${result.episodes}
+🎈 • *مدة: ${result.duration}*
+✨ • *مرتكز على:* ${result.source.toUpperCase()}
 💫 • *Estrenado:* ${result.aired.from}
 🎗 • *Finalizado:* ${result.aired.to}
 🎐 • *Popularidad:* ${result.popularity}

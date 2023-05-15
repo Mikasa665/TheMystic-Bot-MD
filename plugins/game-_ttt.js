@@ -51,7 +51,7 @@ room.game._currentTurn = m.sender === room.game.playerX
 isWin = true }
 let winner = isSurrender ? room.game.currentTurn : room.game.winner
 let str = `
-🎮 𝐓𝐑𝐄𝐒 𝐄𝐍 𝐑𝐀𝐘𝐀 🎮
+🎮  اكس او  🎮
 
 ❎ = @${room.game.playerX.split('@')[0]}
 ⭕ = @${room.game.playerO.split('@')[0]}
